@@ -83,4 +83,7 @@ userAge = 30;
 
 userAge = false;
 
-userAge = 'true';
+userAge = 'henry';
+
+
+console.log(userAge)

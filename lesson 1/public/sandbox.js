@@ -1,16 +1,6 @@
+"use strict";
 // let character = 'maria';
 // let isMale = true;
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 // character = 'henry';
 // isMale = false;
 // const circumference = (diameter: number) => {
@@ -34,28 +24,29 @@ var __assign = (this && this.__assign) || function () {
 // locations[2] = 'ikeja';
 //EXPLICIT TYPE
 // let country: string;
-var age;
-var isEligible;
+let age;
+let isEligible;
 isEligible = false;
-var country = [];
+let country = [];
 country.push('New york');
 //UNION type
-var mixed = [];
+let mixed = [];
 mixed.push('henry');
 mixed.push(45);
 mixed.push('Grace');
 console.log(mixed);
 //UNION type for primitive variable
-var phoneNumber;
+let phoneNumber;
 phoneNumber = '+2347052899465';
 phoneNumber = 2347052899465;
 //OBJECT
-var person;
+let person;
 person = { name: 'henry', age: 10, isEligible: false, location: 'Nsukka' };
-var henry = __assign(__assign({}, person), { hobby: 'football', name: 'hellen' });
+let henry = Object.assign(Object.assign({}, person), { hobby: 'football', name: 'hellen' });
 // console.log(henry);
 //DYNAMIC TYPES => Be careful using this
-var userAge;
+let userAge;
 userAge = 30;
 userAge = false;
-userAge = 'true';
+userAge = 'henry';
+console.log(userAge);
