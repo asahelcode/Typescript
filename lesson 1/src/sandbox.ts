@@ -1,20 +1,12 @@
-//Function
+type strOrNum = string | number;
+type userObject = { name: string; uid: strOrNum };
 
-let greet: Function;
-
-greet = (user: string, location?: string) => {
-  //Adding ?: makes the parameter undefined
-  console.log(`Hello, ${user}`);
+const logDetails = (uid: strOrNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
 };
 
-greet('henry');
-
-let multiply: Function;
-
-multiply = (num1: number, num2: number): number => {
-  return num1 * num2;
+const greet = (user: userObject) => {
+  console.log(`${user.name} is the daedarus of code`);
 };
 
-let result = multiply(10, 18);
-
-console.log(result);
+greet({ name: 'henry', uid: '3849309049' });

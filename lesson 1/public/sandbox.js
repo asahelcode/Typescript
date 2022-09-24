@@ -1,14 +1,8 @@
 "use strict";
-//Function
-let greet;
-greet = (user, location) => {
-    //Adding ?: makes the parameter undefined
-    console.log(`Hello, ${user}`);
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-greet('henry');
-let multiply;
-multiply = (num1, num2) => {
-    return num1 * num2;
+const greet = (user) => {
+    console.log(`${user.name} is the daedarus of code`);
 };
-let result = multiply(10, 18);
-console.log(result);
+greet({ name: 'henry', uid: '3849309049' });
