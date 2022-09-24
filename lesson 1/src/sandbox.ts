@@ -1,86 +1,20 @@
-// let character = 'maria';
-// let isMale = true;
+//Function
 
-// character = 'henry';
+let greet: Function;
 
-// isMale = false;
-
-// const circumference = (diameter: number) => {
-//   return diameter * Math.PI;
-// };
-
-// console.log(circumference(10));
-
-// const greetUser = (user: string) => {
-//   console.log('Welcome to Asahel community', user);
-// };
-
-// greetUser('henry');
-
-//ARRAYS AND OBJECTS
-// const person = {
-//   name: 'henry',
-//   location: 'Nsukka',
-//   age: 20,
-//   religion: 'christianity',
-// };
-
-// person.name = 'Isaac';
-// person.location = 'Badagry';
-
-// const locations = ['Nsukka', 'Ado', 'Kwara', 'Madalla'];
-
-// locations[2] = 'ikeja';
-
-//EXPLICIT TYPE
-
-// let country: string;
-let age: number;
-let isEligible: boolean;
-
-isEligible = false;
-
-let country: string[] = [];
-
-country.push('New york');
-
-//UNION type
-let mixed: (string | number)[] = [];
-
-mixed.push('henry');
-mixed.push(45);
-mixed.push('Grace');
-
-console.log(mixed);
-
-//UNION type for primitive variable
-
-let phoneNumber: string | number;
-
-phoneNumber = '+2347052899465';
-phoneNumber = 2347052899465;
-
-//OBJECT
-
-let person: {
-  name: string;
-  age: number;
-  isEligible: boolean;
-  location: string;
+greet = (user: string, location?: string) => {
+  //Adding ?: makes the parameter undefined
+  console.log(`Hello, ${user}`);
 };
 
-person = { name: 'henry', age: 10, isEligible: false, location: 'Nsukka' };
+greet('henry');
 
-let henry = { ...person, hobby: 'football', name: 'hellen' };
+let multiply: Function;
 
-// console.log(henry);
+multiply = (num1: number, num2: number): number => {
+  return num1 * num2;
+};
 
-//DYNAMIC TYPES => Be careful using this
+let result = multiply(10, 18);
 
-let userAge: any;
-
-userAge = 30;
-
-userAge = false;
-
-userAge = 'true';
+console.log(result);
